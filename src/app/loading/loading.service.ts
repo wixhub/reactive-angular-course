@@ -10,6 +10,10 @@ export class LoadingService {
   // Reactive Component Interaction using Custom Observables and Behavior Subject
   loading$: Observable<boolean> = this.loadingSubject.asObservable();
 
+  constructor() {
+    console.log("Loading Service created ...");
+  }
+
   showLoaderUntilCompleted<T>(obs$: Observable<T>): Observable<T> {
     return of(null).pipe(
       tap(() => this.loadingOn()),
