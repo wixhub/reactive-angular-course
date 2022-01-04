@@ -1,6 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { of } from "rxjs";
-import { map } from "rxjs/operators";
 import { AuthStore } from "./servises/auth.store";
 
 @Component({
@@ -11,9 +9,7 @@ import { AuthStore } from "./servises/auth.store";
 export class AppComponent implements OnInit {
   constructor(public auth: AuthStore) {}
 
-  ngOnInit() {
-    this.auth.isLoggedOut$.pipe(map(r => console.log(r)));
-  }
+  ngOnInit() {}
 
   logout() {
     this.auth.logout();
