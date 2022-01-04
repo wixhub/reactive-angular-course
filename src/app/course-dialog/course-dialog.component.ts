@@ -56,7 +56,7 @@ export class CourseDialogComponent implements AfterViewInit {
       .saveCourse(this.course.id, changes)
       // .pipe(
       //   catchError((err) => {
-      //     const message = "Coul not save course";
+      //     const message = "Could not save course";
       //     console.log(message, err);
       //     this.messagesService.showErrors(message);
       //     return throwError(err);
