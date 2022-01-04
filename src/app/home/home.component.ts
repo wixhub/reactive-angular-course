@@ -5,7 +5,7 @@ import { catchError, finalize, map } from "rxjs/operators";
 import { CoursesService } from "../services/courses.service";
 import { LoadingService } from "../loading/loading.service";
 import { MessagesService } from "../messages/messages.service";
-import { CoursesStore } from "../servises/courses.store";
+import { CoursesStore } from "../services/courses.store";
 
 @Component({
   selector: "home",
@@ -19,9 +19,8 @@ export class HomeComponent implements OnInit {
 
   constructor(
     //private cousesService: CoursesService,
-    private coursesStore: CoursesStore
-  ) //private loadingService: LoadingService,
-  //private messagesService: MessagesService
+    private coursesStore: CoursesStore //private loadingService: LoadingService,
+  ) //private messagesService: MessagesService
   {}
 
   ngOnInit() {

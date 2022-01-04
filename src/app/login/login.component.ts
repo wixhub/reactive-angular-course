@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 import { Router } from "@angular/router";
-import { AuthStore } from "../servises/auth.store";
+import { AuthStore } from "../services/auth.store";
 
 @Component({
   selector: "login",

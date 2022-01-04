@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { AuthStore } from "./servises/auth.store";
+import { AuthStore } from "./services/auth.store";
 
 @Component({
   selector: "app-root",

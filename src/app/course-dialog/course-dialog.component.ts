@@ -16,7 +16,7 @@ import { throwError } from "rxjs";
 import { CoursesService } from "../services/courses.service";
 import { LoadingService } from "../loading/loading.service";
 import { MessagesService } from "../messages/messages.service";
-import { CoursesStore } from "../servises/courses.store";
+import { CoursesStore } from "../services/courses.store";
 
 @Component({
   selector: "course-dialog",
